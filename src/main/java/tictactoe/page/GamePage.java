@@ -12,6 +12,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.pagefactory.AjaxElementLocatorFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 
 import tictactoe.base.Logic;
@@ -128,5 +129,10 @@ public class GamePage extends Logic {
 			}
 		}
 		return board;
+	}
+	
+	@AfterSuite
+	public void tearDown() {
+		driver.quit();
 	}
 }
