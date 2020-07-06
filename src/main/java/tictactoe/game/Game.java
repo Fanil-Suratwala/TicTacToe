@@ -14,7 +14,7 @@ public class Game extends GamePage
    public void game() {
 	   launchGame();
 	   setXorO('x');		   	    // choose between 'x' or 'o'
-	   setDifficulty("Impossible");	// Easy, Medium, Impossible
+	   setDifficulty("Medium");	// Easy, Medium, Impossible
 	   setRounds(5);
 	   play();
    }
